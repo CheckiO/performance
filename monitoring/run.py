@@ -18,7 +18,7 @@ def run(DOMAIN):
     worked_at = request_ended_at - request_started_at
 
     with open(FILENAME, 'a') as the_file:
-        message = f'{round(worked_at, 2)}:{now.strftime(DATETIME_FORMAT)}\n'
+        message = f'{round(worked_at, 2)}-{now.strftime(DATETIME_FORMAT)}\n'
         the_file.write(message)
 
 
