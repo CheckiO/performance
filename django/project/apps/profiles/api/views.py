@@ -14,7 +14,6 @@ class CurrentUsersViewSet(mixins.ListModelMixin, GenericViewSet):
 
     def list(self, request, *args, **kwargs):
         instance = self.get_object()
-
         if not instance:
             serializer = serializers.AnonymousUserSerializer()
         else:

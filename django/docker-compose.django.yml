@@ -1,0 +1,7 @@
+django:
+  image: django
+  container_name: django
+  command: /usr/local/bin/supervisord -c /opt/supervisord.conf
+  restart: always
+  environment:
+    VIRTUAL_HOST: blank.localhost

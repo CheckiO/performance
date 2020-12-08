@@ -1,19 +1,17 @@
 import os
 
-from decouple import config, Csv
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = '1m!+h@@f#1iig$9r5lo)3e$$8e-!0-r$25q3jo24xh%i#gt93s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', False, cast=bool)
-TEMPLATE_DEBUG = config('TEMPLATE_DEBUG', False, cast=bool)
-TOOLBAR_DEBUG = config('TOOLBAR_DEBUG', False, cast=bool)
+DEBUG = False
+TEMPLATE_DEBUG = False
+TOOLBAR_DEBUG = False
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = ('*',)
 
 
 # Application definition
@@ -98,10 +96,3 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 
 STATIC_URL = '/static/'
-
-# Monitoring
-
-ADMINS = [
-    ('Alexander Lyabah', 'a.lyabah@checkio.org'),
-    ('Dmitry Kulakov', 'uNdimka@checkio.org'),
-]
