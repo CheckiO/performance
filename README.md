@@ -22,9 +22,11 @@ Test Project consists of two containers
    
 5. We run same configuration on digitalocean machine (our instance ID - 219483110) and linode instance
    Configuration of both machines identical (Ubuntu 18.04 with 1 GB memory and 1 cpu - Minimal 5 usd configuration)
-   Script to monitor response times were launched at both machines. We provided result of logs in recorded_data folder 
+   Script to monitor response times were launched at both machines. We provided result of logs in monitoring/recorded_data folder 
+
+6. performance_result folder provides results of running scripts 
 
 Script was running on Both Machines from
-Tue Dec  8 13:46:45 UTC 2020
+Tue Dec  9 17:00:00 UTC 2020
 to
-Tue Dec  8 15:46:45 UTC 2020
+Thu Dec 10 09:00:00 UTC 2020

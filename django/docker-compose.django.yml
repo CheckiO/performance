@@ -4,4 +4,4 @@ django:
   command: /usr/local/bin/supervisord -c /opt/supervisord.conf
   restart: always
   environment:
-    VIRTUAL_HOST: blank.checkio-service.info
+    VIRTUAL_HOST: blank2.checkio-service.info
