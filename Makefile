@@ -5,4 +5,4 @@ build-all:
 start-all:
 	docker-compose -f nginx_proxy/docker-compose.nginx_proxy.yml \
 				   -f django/docker-compose.django.yml \
-				   up -d
+				   up

@@ -4,12 +4,16 @@ import requests
 from datetime import datetime
 
 
-def run(URL, FILENAME):
+def run(DOMAIN):
+    URL = 'api/current-user/?format=json'
+    MONITORING_URL = DOMAIN + URL
+    FILENAME = 'results.txt'
     DATETIME_FORMAT = '%d/%m/%Y %H:%M:%S'
+
     now = datetime.now()
 
     request_started_at = time.time()
-    response = requests.get(URL)
+    response = requests.get(MONITORING_URL)
     request_ended_at = time.time()
     worked_at = request_ended_at - request_started_at
 
@@ -19,4 +23,4 @@ def run(URL, FILENAME):
 
 
 if __name__ == "__main__":
-    run(sys.argv[1], sys.argv[2])
+    run(sys.argv[1])
