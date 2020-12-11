@@ -1,0 +1,9 @@
+Min: 0.01
+Max: 5.65
+Count: 30109
+Average: 0.02
+Worse than 1 seconds: 16
+Worse than 5 seconds: 3
+5.46 at 10/12/2020 20:00:03
+5.54 at 10/12/2020 23:15:03
+5.65 at 11/12/2020 05:05:03
