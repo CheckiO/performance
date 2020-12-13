@@ -1,6 +1,6 @@
 Min: 0.01
-Max: 0.52
-Count: 26743
+Max: 3.51
+Count: 135144
 Average: 0.03
-Worse than 1 seconds: 0
+Worse than 1 seconds: 5
 Worse than 5 seconds: 0
